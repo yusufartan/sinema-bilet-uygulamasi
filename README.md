@@ -47,5 +47,6 @@ Projeyi kendi bilgisayarınızda çalıştırmak için:
 
 Projeyi tarayıcınızda çalışır şekilde görmek için:
 
-🔗 [Uygulamayı Buradan Açın](https://yusufartan.github.io/sinema-bilet-uygulamasi/)
+🔗 [Uygulamayı Buradan Açın]
+https://yusufartan.github.io/sinema-bilet-uygulamasi/
 
