@@ -40,3 +40,12 @@ Projeyi kendi bilgisayarınızda çalıştırmak için:
 ```bash
 1. Bu repoyu klonlayın
 2. index.html dosyasını tarayıcıda açın
+
+---
+
+## 🌐 Canlı Demo
+
+Projeyi tarayıcınızda çalışır şekilde görmek için:
+
+🔗 [Uygulamayı Buradan Açın](https://yusufartan.github.io/sinema-bilet-uygulamasi/)
+
