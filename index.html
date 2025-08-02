@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema Bilet Alma Uygulaması</title>
+
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="confirm.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Sinema Bilet Uygulaması</h1>
+        <div class="seatMain">
+            <div class="row">
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            </div>
+            <div class="row">
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            </div>
+            <div class="row">
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            </div>
+            <div class="row">
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            </div>
+            <div class="row">
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+                <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            </div>
+        </div>
+        <div class="movieMain">
+            <select id="selectMovie">
+                <option value="20">Film 1</option>
+                <option value="25">Film 2</option>
+                <option value="30">Film 3</option>
+            </select>
+        </div>
+        <div class="seatStatusMain">
+            <div class="row">
+                <div class="seatEmpty"><i class="fa-solid fa-couch"></i><span>Boş</span></div>
+                <div class="seatSelected"><i class="fa-solid fa-couch"></i><span>Seçili</span></div>
+                <div class="seatFull"><i class="fa-solid fa-couch"></i><span>Dolu</span></div>
+            </div>
+        </div>
+        <div class="resultTextMain">
+            <p>
+                <span class="count">0</span>
+                &nbsp;&nbsp;adet bilet için ödenecek tutar
+                <span class="amount">0</span>&nbsp;&nbsp;TL'dir.
+            </p>
+        </div>
+        <div class="buttonMain">
+            <button id="buyButton" type="button">Satın Al</button>
+            <audio id="pursheAudio" src="sounds/purshe.mp3"></audio>
+            <button id="clearButton" type="button">Temizle</button>
+            <audio id="deleteAudio" src="sounds/delete.mp3"></audio>
+        </div>
+        <div class="screen">
+            <h2 class="screenTitle">SAHNE</h2>
+        </div>
+    </div>
+
+    <!-- Confirm Kutusu -->
+    <div id="customConfirm" class="confirm-modal hidden">
+        <div class="confirm-box">
+            <p>Emin misin?</p>
+            <div class="confirm-buttons">
+                <button id="confirmYes">Evet</button>
+                <button id="confirmNo">Hayır</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="main.js"></script>
+    <script src="confirm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

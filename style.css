@@ -1,0 +1,194 @@
+/* === Genel Ayarlar === */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #363535;
+}
+
+/* === Yapı & Layout === */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.seatStatusMain .row i {
+    margin-right: 10px;
+}
+
+.seatStatusMain .row div {
+    margin-left: 10px;
+}
+
+.screen {
+    margin-top: 15px;
+    margin-bottom: 100px;
+    width: 650px;
+    height: 135px;
+    background-color: lightgray;
+    border-radius: 5px;
+    box-shadow: 2px 4px 7px rgba(255, 254, 254, 0.7);
+}
+
+.screenTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgb(63, 63, 63);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* === Koltuklar === */
+
+.seat {
+    font-size: 35px;
+    color: lightgray;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 6px;
+    transition: 0.2s ease;
+}
+
+.seat:not(.full):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.seatEmpty {
+    color: lightgray;
+    font-size: 20px;
+}
+
+.seatSelected {
+    color: rgb(200, 200, 103);
+    font-size: 20px;
+}
+
+.seatFull {
+    color: rgb(201, 35, 35);
+    font-size: 20px;
+}
+
+.seatStatusMain {
+    margin-top: 15px;
+}
+
+.empty{
+    color: lightgray;
+}
+
+.selected{
+    color: rgb(200, 200, 103);
+}
+
+.full{
+    color: rgb(201, 35, 35);
+}
+
+/* === Film Seçimi === */
+
+.movieMain {
+    margin-top: 15px;
+}
+
+#selectMovie {
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* === Sonuç Metni === */
+
+.resultTextMain {
+    margin-top: 10px;
+}
+
+.resultTextMain>p {
+    color: lightgray;
+    font-size: 18px;
+}
+
+.resultTextMain>p>span {
+    color: yellow;
+}
+
+/* === Butonlar === */
+
+#buyButton {
+    background-color: #80a0a2;
+}
+
+#clearButton {
+    background-color: #6a040f;
+}
+
+.buttonMain {
+    margin-top: 15px;
+    width: 220px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonMain button {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: #d3c4c6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.buttonMain button::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ff4b1f;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.buttonMain button:hover {
+    color: #ff7f50;
+}
+
+.buttonMain button:hover::before {
+    transform: scaleX(1);
+}
+
+/* === Diğer === */
+
+.title {
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}

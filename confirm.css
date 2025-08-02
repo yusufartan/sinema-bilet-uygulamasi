@@ -1,0 +1,46 @@
+/* css/confirm.css */
+.confirm-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.confirm-box {
+  background: #f1f1f1;
+  padding: 20px 30px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: Arial;
+  color: #333;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+}
+
+.confirm-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.confirm-buttons button {
+  padding: 8px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.confirm-buttons button:hover {
+  background-color: #ddd;
+}
+
+.hidden {
+  display: none;
+}
